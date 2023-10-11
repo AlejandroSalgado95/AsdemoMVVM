@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/list">
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.asdemoapp.presentation.view.ApiListFragment"
+        android:label="@string/list_title"
+        tools:layout="@layout/fragment_api_list">
+        <action
+            android:id="@+id/action_list_to_details"
+            app:destination="@id/details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/super_hero_search"
+        android:name="com.example.asdemoapp.presentation.view.SuperHeroSearchFragment"
+        android:label="@string/super_hero_search_title"
+        tools:layout="@layout/fragment_super_hero_search" >
+        <action
+            android:id="@+id/action_super_hero_search_to_superHeroDetailedInfoFragment"
+            app:destination="@id/superHeroDetailedInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.asdemoapp.presentation.view.ProfileFragment"
+        android:label="@string/profile_title"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.asdemoapp.presentation.view.ApiDetailedInfoFragment"
+        android:label="@string/details_title"
+        tools:layout="@layout/fragment_api_detailed_info" >
+        <argument
+            android:name="currentApiCategoryModel"
+            app:argType="com.example.asdemoapp.domain.model.ApiCategoryModel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/superHeroDetailedInfoFragment"
+        android:name="com.example.asdemoapp.presentation.view.SuperHeroDetailedInfoFragment"
+        android:label="fragment_super_hero_detailed_info"
+        tools:layout="@layout/fragment_super_hero_detailed_info" >
+        <argument
+            android:name="currentSuperHeroModel"
+            app:argType="com.example.asdemoapp.domain.model.SuperHeroModel" />
+    </fragment>
+
+</navigation>

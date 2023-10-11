@@ -1,1 +1,1 @@
-# AsdemoMVVM
+This is a training project by Softeq

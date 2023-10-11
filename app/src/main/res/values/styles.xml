@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTheme">
+        <item name="android:background">@color/brand_color</item>
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarThemeAlternate" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="CircularImage" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">asdemoapp</string>
+
+    <string name="list_title">List</string>
+    <string name="super_hero_search_title">Search</string>
+    <string name="super_hero_details_title">Hero details</string>
+    <string name="profile_title">Profile</string>
+    <string name="details_title">Details</string>
+
+    <string name="user_real_name">Alejandro Salgado</string>
+    <string name="photo_option">Take a photo</string>
+    <string name="gallery_option">Choose from gallery</string>
+    <string name="email_account">alejandro.salgado@softeq.com</string>
+    <string name="github_account">AlejandroSalgado95</string>
+    <string name="avatar_content_description">This image contains the super hero profile picture</string>
+    <string name="id_placeholder">12345</string>
+    <string name="search_id_hint">Enter id for search</string>
+    <string name="powerstats_placeholder">Powerstats</string>
+    <string name="intelligence_placeholder">Intelligence:</string>
+    <string name="strength_placeholder">Strength:</string>
+    <string name="speed_placeholder">Speed:</string>
+    <string name="durability_placeholder">Durability:</string>
+    <string name="power_placeholder">Power:</string>
+    <string name="combat_placeholder">Combat:</string>
+    <string name="appearence_placeholder">Appearance</string>
+    <string name="gender_placeholder">Gender:</string>
+    <string name="race_placeholder">Race:</string>
+    <string name="height_placeholder">Height:</string>
+    <string name="weight_placeholder">Weight:</string>
+    <string name="show_more_placeholder">SHOW MORE</string>
+    <string name="name_placeholder">Name:</string>
+    <string name="slug_placeholder">Slug:</string>
+    <string name="email_placeholder">osc.armer@mail.com</string>
+    <string name="github_placeholder">your_github_acc.com</string>
+    <string name="profile_name_placeholder">Your Name</string>
+    <string name="api_template">API: %s</string>
+    <string name="reload">Reload</string>
+    <string name="nothing_found">Nothing was found</string>
+    <string name="api">API:</string>
+    <string name="description">Description:</string>
+    <string name="auth">Auth:</string>
+    <string name="https">HTTPS:</string>
+    <string name="cors">Cors:</string>
+    <string name="category">Category:</string>
+    <string name="link">Link:</string>
+
+    <string name="successful_connection">Success</string>
+    <string name="error">Error</string>
+    <string name="generic_error">Something went wrong</string>
+    <string name="unexpected_error">An unexpected error occurred</string>
+    <string name="server_out_of_reach_error">Couldnt reach server. Check your internet connection</string>
+    <string name="timeout_connection_error">Connection timed out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

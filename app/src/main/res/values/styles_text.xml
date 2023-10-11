@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SmallText">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="MediumText">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="BigText">
+        <item name="android:textSize">30dp</item>
+    </style>
+
+    <style name="BigText.White" parent="BigText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MediumText.Hyperlink" parent="MediumText">
+        <item name="android:textColor">@color/hyperlink_color</item>
+    </style>
+
+    <style name="MediumText.Gray" parent="MediumText">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="SmallText.Gray" parent="SmallText">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+</resources>

@@ -1,0 +1,46 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/activity_main.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/fragment_api_detailed_info.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/fragment_api_list.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/fragment_profile.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/fragment_profile_bottom_sheet.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/fragment_super_hero_detailed_info.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/fragment_super_hero_search.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/item_super_hero.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/view_error.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/layout/view_nothing_found.xml" value="0.19202898550724637" />
+        <entry key="../AsdemoMVVM/app/src/main/res/menu/bottomnav_menu.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/drawable/autocomplete_textview_background.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/search_view_background.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.131" />
+        <entry key="app/src/main/res/drawable/superhero_suggestion_divider.xml" value="0.169" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11803444782168186" />
+        <entry key="app/src/main/res/layout/autocomplete_textview_background.xml" value="0.1609375" />
+        <entry key="app/src/main/res/layout/fragment_api_detailed_info.xml" value="0.31627906976744186" />
+        <entry key="app/src/main/res/layout/fragment_api_list.xml" value="0.19293478260869565" />
+        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_edit_profile_photo_dialog.xml" value="0.18854166666666666" />
+        <entry key="app/src/main/res/layout/fragment_hero_detailed_info.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_hero_search.xml" value="0.22735507246376813" />
+        <entry key="app/src/main/res/layout/fragment_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_profile_bottom_sheet.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.11803444782168186" />
+        <entry key="app/src/main/res/layout/fragment_super_hero_detailed_info.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_super_hero_search.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_api_category.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_hero.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_super_hero.xml" value="0.22735507246376813" />
+        <entry key="app/src/main/res/layout/item_super_hero_suggestion.xml" value="0.1734375" />
+        <entry key="app/src/main/res/layout/view_divider.xml" value="0.1609375" />
+        <entry key="app/src/main/res/layout/view_error.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/view_nothing_found.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/menu/bottomnav_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    tools:context=".presentation.view.SuperHeroDetailedInfoFragment">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/avatar_content_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/CircularImage"/>
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="name_label,slug_label" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="intelligence_label,strength_label,speed_label,durability_label,power_label,combat_label,appearence_label,gender_label,race_label,height_label,weight_label" />
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/name_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toEndOf="@id/avatar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/name_label"
+                app:layout_constraintStart_toEndOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/name_label"
+                tools:text="A-Bomb" />
+
+            <TextView
+                android:id="@+id/slug_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/slug_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toEndOf="@id/avatar"
+                app:layout_constraintTop_toBottomOf="@id/name_text" />
+
+            <TextView
+                android:id="@+id/slug_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/slug_label"
+                app:layout_constraintStart_toEndOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/slug_label"
+                tools:text="1-a-bomb" />
+
+            <TextView
+                android:id="@+id/powerstats_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/powerstats_placeholder"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+            <TextView
+                android:id="@+id/intelligence_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/intelligence_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/powerstats_label" />
+
+            <TextView
+                android:id="@+id/intelligence_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/intelligence_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/intelligence_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/strength_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/strength_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intelligence_text" />
+
+            <TextView
+                android:id="@+id/strength_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/strength_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/strength_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/speed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/speed_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/strength_text" />
+
+            <TextView
+                android:id="@+id/speed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/speed_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/speed_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/durability_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/durability_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/speed_text" />
+
+            <TextView
+                android:id="@+id/durability_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/durability_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/durability_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/power_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/power_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/durability_text" />
+
+            <TextView
+                android:id="@+id/power_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/power_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/power_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/combat_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/combat_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/power_text" />
+
+            <TextView
+                android:id="@+id/combat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/combat_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/combat_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/appearence_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appearence_placeholder"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/combat_text" />
+
+            <TextView
+                android:id="@+id/gender_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/gender_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appearence_label" />
+
+            <TextView
+                android:id="@+id/gender_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/gender_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/gender_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/race_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/race_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gender_text" />
+
+            <TextView
+                android:id="@+id/race_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/race_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/race_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/height_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/height_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/race_text" />
+
+            <TextView
+                android:id="@+id/height_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/height_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/height_label"
+                tools:text="70" />
+
+            <TextView
+                android:id="@+id/weight_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/weight_placeholder"
+                android:textAppearance="@style/SmallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/height_text" />
+
+            <TextView
+                android:id="@+id/weight_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:textAppearance="@style/MediumText"
+                app:layout_constraintBottom_toBottomOf="@id/weight_label"
+                app:layout_constraintStart_toEndOf="@id/barrier_info"
+                app:layout_constraintTop_toTopOf="@id/weight_label"
+                tools:text="70" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

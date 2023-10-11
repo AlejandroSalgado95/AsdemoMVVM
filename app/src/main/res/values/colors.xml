@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#787878</color>
+    <color name="light_gray">#bfbfbf</color>
+    <color name="brand_color">#2A56C6</color>
+    <color name="profile_background_color">#f2f2f2</color>
+    <color name="background_color">#E5E5E5</color>
+    <color name="chip_color">#EEEEEE</color>
+    <color name="status_bar_color">#1C3AA9</color>
+    <color name="hyperlink_color">#1648FA</color>
+    <color name="bottom_sheet_dialog_icons_color">#737373</color>
+    <color name="profile_icons_color">#4a4a4a</color>
+    <color name="superhero_suggestion_item_color">#16000000</color>
+</resources>
